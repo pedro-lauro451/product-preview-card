@@ -1,0 +1,124 @@
+body
+{
+    margin: 0;
+    background-color: #f3eae3;
+}
+
+img
+{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+}
+
+.card
+{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.product-image
+{
+    display: flex;
+}
+
+.product-image-mobile
+{
+    display: none;
+}
+
+.card-header
+{
+    color:#9698a5;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-family: "Montserrat" serif;
+}
+
+.card-title
+{
+    font-size: 30px;
+    max-width: 200px;
+    line-height: 28px;
+    font-family: 'Fraunces', serif;
+}
+
+.card-content
+{
+    color:#9698a5;
+    max-width: 220px;
+    font-family: "Montserrat" serif;
+}
+
+.content
+{
+    max-width: 300px;
+    padding: 1.5rem;
+}
+
+.btn
+{
+    background-color: #3d8168;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat" serif;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    background-color: #1a4031;
+}
+
+.btn-item
+{
+  padding-left: 10px;
+}
+
+.spacer
+{
+    height: 40px;
+}
+
+@media all and (max-width:700px)
+{
+    .card
+    {
+        flex-direction: column;
+    }
+    .card-title
+    {
+        max-width: 220px;
+    }
+    .card-content
+    {
+        max-width: 250px;
+    }
+    .product-image
+    {
+        display:none;
+    }
+    .product-image-mobile
+    {
+        display: block;
+    }
+    .spacer
+    {
+        height: 15px;
+    }
+    img
+    {
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
